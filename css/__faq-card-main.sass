@@ -1,0 +1,69 @@
+.main
+	background: linear-gradient($soft-violet 50%, $soft-blue)
+	min-height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	font-family: 'Kumbh Sans', sans-serif
+
+.faq-card
+	background: #fff
+	border-radius: 15px
+	max-width: 450px
+	min-width: 320px
+	margin: 8em 1em 1em 1em
+	
+	&__image
+		width: 260px
+		margin: auto
+	&__illustration
+		background: url(images/bg-pattern-mobile.svg) no-repeat
+		background-size: cover
+		height: 110px
+		&-mobile
+			margin-top: -117px
+			width: 100%
+		&-desktop
+			display: none
+	&__body
+		margin: 0 1.5em 2em 1.5em
+
+		&-title
+			text-align: center
+			color: $very-dark-desaturated-blue
+	&__text
+		font-size: 14px
+		border-bottom: 1px solid $light-grayish-blue
+		&-quest
+			display: flex
+			justify-content: space-between
+			align-items: center
+			color: $very-dark-grayish-blue
+			cursor: pointer
+			user-select: none
+			&:hover
+				color: $soft-red
+		&-answ
+			font-size: 13px
+			width: 90%
+			line-height: 1.1rem
+			color: $dark-grayish-blue
+			height: 0
+			overflow: hidden
+			margin: 0
+			transition: .5s
+
+		&-quest--active
+			font-weight: 700
+		&-icon-arrow--active
+			transform: rotate(180deg)
+		&-answ--show
+				height: 35px
+				margin-bottom: 12px
+
+.attribution
+	font-size: 13px
+	position: fixed
+	bottom: 0
+	color: #fff
+	font-weight: 700

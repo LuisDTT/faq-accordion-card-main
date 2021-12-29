@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.main {
+  background: linear-gradient(#af67e9 50%, #6565e7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif; }
+
+.faq-card {
+  background: #fff;
+  border-radius: 15px;
+  max-width: 450px;
+  min-width: 320px;
+  margin: 8em 1em 1em 1em; }
+  .faq-card__image {
+    width: 260px;
+    margin: auto; }
+  .faq-card__illustration {
+    background: url(images/bg-pattern-mobile.svg) no-repeat;
+    background-size: cover;
+    height: 110px; }
+    .faq-card__illustration-mobile {
+      margin-top: -117px;
+      width: 100%; }
+    .faq-card__illustration-desktop {
+      display: none; }
+  .faq-card__body {
+    margin: 0 1.5em 2em 1.5em; }
+    .faq-card__body-title {
+      text-align: center;
+      color: #1d1e35; }
+  .faq-card__text {
+    font-size: 14px;
+    border-bottom: 1px solid #e7e7e9; }
+    .faq-card__text-quest {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #4a4b5e;
+      cursor: pointer;
+      user-select: none; }
+      .faq-card__text-quest:hover {
+        color: #f47c57; }
+    .faq-card__text-answ {
+      font-size: 13px;
+      width: 90%;
+      line-height: 1.1rem;
+      color: #787887;
+      height: 0;
+      overflow: hidden;
+      margin: 0;
+      transition: 0.5s; }
+    .faq-card__text-quest--active {
+      font-weight: 700; }
+    .faq-card__text-icon-arrow--active {
+      transform: rotate(180deg); }
+    .faq-card__text-answ--show {
+      height: 35px;
+      margin-bottom: 12px; }
+
+.attribution {
+  font-size: 13px;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  font-weight: 700; }
+
+@media screen and (min-width: 940px) {
+  .faq-card {
+    display: flex;
+    margin: 2em 1em;
+    max-width: none; }
+    .faq-card__image {
+      width: 100%;
+      margin: auto 0;
+      height: 500px; }
+    .faq-card__illustration {
+      height: 100%;
+      background: url(images/illustration-woman-online-desktop.svg) 120%, url(images/bg-pattern-desktop.svg) 100% 65%;
+      background-repeat: no-repeat;
+      position: relative; }
+      .faq-card__illustration-desktop {
+        display: block;
+        height: 150px;
+        position: absolute;
+        top: 225px;
+        left: -76px; }
+      .faq-card__illustration-mobile {
+        display: none; }
+    .faq-card__body {
+      margin: auto 5em;
+      overflow-y: auto;
+      max-height: 380px; }
+      .faq-card__body-title {
+        text-align: left;
+        margin-bottom: 1.5em; } }
+
+/*# sourceMappingURL=main.css.map */
