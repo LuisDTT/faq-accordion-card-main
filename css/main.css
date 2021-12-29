@@ -12,7 +12,8 @@
   border-radius: 15px;
   max-width: 450px;
   min-width: 320px;
-  margin: 8em 1em 1em 1em; }
+  margin: 8em 1em 1em 1em;
+  box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.2); }
   .faq-card__image {
     width: 260px;
     margin: auto; }
